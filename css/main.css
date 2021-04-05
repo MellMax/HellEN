@@ -363,17 +363,17 @@ button {
   background-color: red;
 }
 
-.program {
+.advantages {
   padding: 50px 0;
 }
 
-.program_title {
+.advantages_title {
   margin-bottom: 30px;
   text-align: center;
 }
 
 @media screen and (min-width: 1314px) {
-  .program_title {
+  .advantages_title {
     text-align: left;
     font-weight: 800;
     font-size: 46px;
@@ -381,19 +381,19 @@ button {
   }
 }
 
-.program-list {
+.advantages-list {
   background: #FFFFFF;
   cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
-  .program-list {
+  .advantages-list {
     margin: 0 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .program-list {
+  .advantages-list {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -402,7 +402,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .program-list {
+  .advantages-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -411,7 +411,7 @@ button {
 }
 
 @media screen and (min-width: 1314px) {
-  .program-list {
+  .advantages-list {
     justify-content: space-between;
   }
 }
@@ -474,12 +474,19 @@ button {
 .card-link:hover .card-text,
 .card-link:focus .card-text,
 .card-link:focus .card-title,
-.card-link:hover .card-icon {
+.card-link:hover .card-icon,
+.card-link:focus .card-icon {
   color: #FFFFFF;
   fill: #FFFFFF;
 }
 
-.card-link:hover .card-title::after {
+.card-link:hover,
+.card-link:focus {
+  background-color: #FF6B09;
+}
+
+.card-link:hover .card-title::after,
+.card-link:focus .card-title::after {
   background-color: #FFFFFF;
 }
 
@@ -560,8 +567,53 @@ button {
   fill: #FF6B09;
 }
 
-.f {
-  background-color: yellow;
+.program {
+  background-color: #111518;
+}
+
+.program__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.program-list__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.program-study__title {
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 164.9%;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
+}
+
+.program-study__title::before {
+  display: block;
+  content: " ";
+  width: 12px;
+  height: 1px;
+  margin-right: 6px;
+  background-color: #ff6b09;
+}
+
+.program-study__text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  color: #b9b9b9;
 }
 
 .g {

@@ -1,3 +1,58 @@
-.f {
-  background-color: yellow;
+.program {
+  background-color: rgba(17, 21, 24, 1);
+
+  &__title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.program-list {
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.program-study {
+  &__title {
+    display: flex;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 164.9%;
+
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: rgba(255, 107, 9, 1);
+  }
+
+  &__title::before {
+    display: block;
+    content: " ";
+    width: 12px;
+    height: 1px;
+    margin-right: 6px;
+    background-color: rgba(255, 107, 9, 1);
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+
+    opacity: 0.5;
+    color: rgba(185, 185, 185, 1);
+  }
 }
